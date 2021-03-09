@@ -20,8 +20,18 @@ public class Duck extends  Vegan implements  Run,Swim,Fly,Voice{
     }
 
     @Override
+    public void walk() {
+        System.out.println("Duck walk");
+    }
+
+    @Override
     public void swim() {
         System.out.println("Duck swim");
+    }
+
+    @Override
+    public void playInWater() {
+        System.out.println("Duck play in water");
     }
 
     @Override
@@ -30,7 +40,17 @@ public class Duck extends  Vegan implements  Run,Swim,Fly,Voice{
     }
 
     @Override
+    public void createSockets() {
+        System.out.println("Duck create sockets");
+    }
+
+    @Override
     public String doVoice() {
         return getVoice();
+    }
+
+    @Override
+    public String shout() {
+        return getVoice()+"!!!";
     }
 }

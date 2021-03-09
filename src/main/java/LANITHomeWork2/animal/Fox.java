@@ -19,13 +19,28 @@ public class Fox extends  MeatEaters implements  Run,Swim,Voice{
     }
 
     @Override
+    public void walk() {
+        System.out.println("fox walk");
+    }
+
+    @Override
     public void swim() {
         System.out.println("fox swim");
     }
 
     @Override
+    public void playInWater() {
+        System.out.println("fox play in water");
+    }
+
+    @Override
     public String doVoice() {
         return getVoice();
+    }
+
+    @Override
+    public String shout() {
+        return getVoice()+"!!!";
     }
 
 }

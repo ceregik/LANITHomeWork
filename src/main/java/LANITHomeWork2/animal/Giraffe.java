@@ -20,7 +20,17 @@ public class Giraffe extends  Vegan implements  Run,Voice{
     }
 
     @Override
+    public void walk() {
+        System.out.println("Giraffe walk");
+    }
+
+    @Override
     public String doVoice() {
         return getVoice();
+    }
+
+    @Override
+    public String shout() {
+        return getVoice()+"!!!";
     }
 }

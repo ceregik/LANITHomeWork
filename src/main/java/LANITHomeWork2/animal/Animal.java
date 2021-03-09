@@ -25,7 +25,7 @@ public abstract class Animal{
         this.voice = voice;
     }
 
-    public void setWeight(int weight) {
+    private void setWeight(int weight) {
         this.weight = weight;
     }
 

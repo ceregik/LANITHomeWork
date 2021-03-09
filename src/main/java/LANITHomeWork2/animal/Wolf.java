@@ -19,12 +19,27 @@ public class Wolf extends  MeatEaters implements  Run,Swim,Voice{
     }
 
     @Override
+    public void walk() {
+        System.out.println("wolf walk");
+    }
+
+    @Override
     public void swim() {
         System.out.println("wolf swim");
     }
 
     @Override
+    public void playInWater() {
+        System.out.println("wolf play in water");
+    }
+
+    @Override
     public String doVoice() {
         return  getVoice();
+    }
+
+    @Override
+    public String shout() {
+        return getVoice()+"!!!";
     }
 }

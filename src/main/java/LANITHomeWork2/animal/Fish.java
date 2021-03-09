@@ -21,4 +21,9 @@ public class Fish extends  MeatEaters implements  Swim{
         System.out.println("fish swim");
     }
 
+    @Override
+    public void playInWater() {
+        System.out.println("fish play in water");
+    }
+
 }
